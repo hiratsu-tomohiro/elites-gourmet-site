@@ -1,5 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
+    @q = Restaurant.search(params[:q])
+    @restaurants = @q.result.page(params[:page]).per(20).order(:id)
   end
   
   def show

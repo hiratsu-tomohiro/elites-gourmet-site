@@ -35,6 +35,7 @@ gem 'geocoder'
 gem 'ransack'
 gem 'kaminari'
 gem 'kaminari-bootstrap'
+gem 'ckeditor'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

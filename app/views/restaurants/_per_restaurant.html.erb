@@ -13,6 +13,9 @@
         <div class="genres">
           <%= render 'restaurants/genre_list', restaurant: restaurant %>
         </div>
+        <div class='introduction'>
+          <%= truncate( strip_tags(restaurant.introduction), length: 50) %>
+        </div>
       </div>
     </div>
   </div>
